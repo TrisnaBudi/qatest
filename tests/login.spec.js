@@ -14,8 +14,6 @@ test("Open Login Assemblr", async ({ page }) => {
   
   // Tunggu hingga popup login muncul
   await page.waitForSelector('div[class="Navbar_login_container__yEoKN"]');
-  // Tunggu hingga halaman dimuat sepenuhnya
-  await page.waitForLoadState('load');
 
  // Tunggu hingga elemen formulir username muncul
  await page.waitForSelector('input[id="username"]');
